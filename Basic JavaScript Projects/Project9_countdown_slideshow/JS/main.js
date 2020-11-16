@@ -45,11 +45,11 @@ function showSlides() { // showslides function created //
 
 
 function countdown() { // created countdown function //
-    var seconds = document.getElementById("seconds").nodeValue; // gave variable value of seconds and to use getelementbyid to display seconds //
+    var seconds = document.getElementById("seconds").value; // gave variable value of seconds and to use getelementbyid to display seconds //
 
     function tick() { // created function with a name of tick //
         seconds = seconds - 1;
-        TimeRanges.innerHTMl = seconds;
+        timer.innerHTML = seconds;
         setTimeout(tick, 1000); 
     if(seconds == -1) { // if condition statment is seconds equal -1 than alert box will show up with message //
         alert("Time is up"); // message that will display if second equal -1 //
