@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="e>
+<head>
+<meta charset="utf-8">
+	<title>KINGDOM</title>
+	<link rel="stylesheet" href="./css/one_page_website.css">
+	<script src="./JS/one_page_websites.js"></script>
+</head>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+ <a href="hotel">hotel</a>
+ <a href="travel">travel</a>
+ <a href="reservation">reservation</a>
+  <a href="contact">Contact</a>
+  <a href="about">About</a>
+</div>
+
+<body>
+<style>
+	body {text-align:center;}
+	h5 {
+	 font-style: italic;
+	
+	 }
+	 body {
+		background-image: url("image.jpg");
+		background-repeat: no-repeat;
+		background-size : 100%
+	}
+</style>
+<body>
+	<h1>KINGDOM<h1>
+	<h5>"The world is your Kingdom"<h5>
+</body>
+
+<section>
+	<h3>WELCOME TO KINDOM<h3>
+	<p>Welcome to Kingdom where the world is your kingdom. We are here at kingdom are here to provide you with 
+	every resource you need to enjoy your vaction. From package deals to hotel stay to five star dinning, we here at kingdom 
+	want to provide you with top of the line service to ensure you have a safe enjoyable trave. Kingdom are worldwide leaders and innovators in responsible tourism and offer the best way for travelers to experience the world.If there is anything we can do please fill out the contact form 
+	on this page and one of our very qualified agents will be getting ahold of you for your perfect travel.Thank you for your visit and welcome to Kingdom.</p>
+</section>
+
+<section>
+	<h3>Travel Video<h3>
+	<p>BOOK NOW</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/BWmJw4zLrXY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section>
+
+	<div class="row">
+		<div class="column">
+    	<img src="image2.jpg"   onclick="openModal();currentSlide(1)" class="hover-shadow" >
+    	</div>
+ 		<div class="column">
+    	<img src="image3.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow" >
+		</div>
+		<div class="column">
+		<img src="image4.jpg"   onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 3</div>
+			<img src="image2.jpg" style="width:100%;">
+		    </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 3</div>
+			<img src="image3.jpg" style="width: 100%;">
+		    </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 3</div>
+			<img src="image4.jpg" style="width: 100%;">
+			</div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  <div class="views">
+			<img class="demo" src="image2.jpg" onclick="currentSlide (1)" alt="Greece" style="width: 100%;">
+		  </div>
+	  
+		  <div class="views">
+			<img class="demo" src="image3.jpg" onclick="currentSlide(2)" alt="Dubai" style="width: 100%;" >
+		  </div>
+	  
+		  <div class="views">
+			<img class="demo" src="image4.jpg" onclick="currentSlide(3)" alt="Hot Air Ballon Ride" style="width: 100%;">
+		  </div>
+		</div>
+	</div>
+		
+
+
+</section>
+
+<section>
+	
+	<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	<label for="email">Email</label>
+	<input type="text" id="email" name="email" placeholder="email">
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</section>
+
+<footer>
+  <p>Author: Dominique Mathews</p>
+</footer>
+
+</html>
+
+
+	
