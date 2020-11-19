@@ -103,8 +103,8 @@ function Handle_Operator(Next_Operator) {
         return;
     }
      
-    if (target.classList.contains('Operator')) {
-        Handle_operator(target.value);
+    if (target.classList.contains('operator')) {
+        Handle_Operator(target.value);
         Update_Display();
         return;
     }
