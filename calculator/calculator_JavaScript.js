@@ -94,7 +94,7 @@ function Handle_Operator(Next_Operator) {
  Update_Display() ;
  //this section monitors button clicks
  const keys = document.querySelector('.calculator-keys');
- keys.addEventListener('Click', (event) => {
+ keys.addEventListener('click', (event) => {
     //the targer variable is an object that represents the element
     //that was clicked
     const { target } = event;
@@ -103,7 +103,7 @@ function Handle_Operator(Next_Operator) {
         return;
     }
      
-    if (target.classList.contains('operator')) {
+    if (target.classList.contains('Operator')) {
         Handle_operator(target.value);
         Update_Display();
         return;
